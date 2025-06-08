@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!-- super important para kahit iwide ung container hindi magugulo ung mga na sa loob -->
+  <title>Multi-Container Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Front Container -->
+  <div id="container-1" class="container active">
+    <h1>Product Inventory Management</h1>
+
+    <p class="nuts"><span id="nuti">Note: </span>Please enter the products first before clicking the Next button</p>
+
+    <!-- Add New Product -->
+    <input type="text" id="new-product-name" placeholder="Enter product name (e.g., Coke)" required>
+    <div class="button-group">
+      <button id="add-product-btn">Add Product</button>
+      <button id="next-btn">Next</button>
+    </div>
+    
+  </div>
+
+  <!-- Second Container -->
+  <div id="container-2" class="container">
+    <h2>Product Inventory Management</h2>
+    <!-- Inventory Form -->
+    <form id="inventory-form">
+      <select id="product-type" required>
+        <option value="" disabled selected>Select a product</option>
+      </select>
+      <input type="number" id="quantity" placeholder="Quantity" required min="1">
+      <input type="number" id="cost" placeholder="Cost per item" required min="0.01" step="0.01">
+      <button id="sub" type="submit">Submit</button>
+    </form>
+
+    <!-- Inventory Summary -->
+    <div id="summary">
+      <h2>Inventory Information</h2>
+      <p class="sum">Total Items: <span id="total-items">0</span></p>
+      <p class="sum">Total Cost: $<span id="total-cost">0.00</span></p>
+      <p class="sum">Average Cost: $<span id="average-cost">0.00</span></p>
+      <ul id="product-summary-list"></ul>
+      <button id="back-btn">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
