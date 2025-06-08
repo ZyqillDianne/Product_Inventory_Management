@@ -1,0 +1,66 @@
+/* General body styling, super important para kahit iwide ung container hindi magugulo ung mga na sa loob */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.container {
+    display: none; /*important para mablock ung isang container, para d magkasamang mag appear*/
+    padding: 20px;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+#container-1{
+  padding: 20px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  box-shadow: 0 0 10px 5px rgb(34, 216, 161), 0 0 20px 7px rgb(16, 152, 206), 0 0 30px rgb(0, 17, 255);
+  border-radius: 10px;
+  border: 5px solid rgb(192, 242, 255);
+  width: 250px;
+  height: 500px;
+  text-align: center;
+}
+
+#container-2{
+  padding: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  box-shadow: 0 0 10px 5px rgb(34, 216, 161), 0 0 20px 7px rgb(16, 152, 206), 0 0 30px rgb(0, 17, 255);
+  width: 250px;
+  border: 5px solid rgb(192, 242, 255);
+  height: 550px;
+ 
+}
+
+
+h1 {
+  margin-top: 50px;
+  font-size: 1.8em;
+  color: #360253;
+  /*-webkit-text-stroke: 1px rgb(226, 111, 255); kapal at kulay ng gilid  ng letters*/
+ 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+}
